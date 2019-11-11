@@ -1,0 +1,367 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "xxxxx",
+				"abbreviation": "xxxxx",
+				"full": "Lortham Items",
+				"authors": [
+					"/u/yangeryanger"
+				],
+				"version": "3.0",
+				"url": "http://www.yanger.net/",
+				"targetSchema": "1.0.0"
+			},
+			{
+				"json": "xxxxx:e",
+				"abbreviation": "xxxxx:E",
+				"full": "Lortham Items Expanded",
+				"authors": [
+					"/u/yangeryanger"
+				],
+				"version": "1.0",
+				"url": "http://www.yanger.net/",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"optionalFeatureTypes": {
+			"PE": "Personal Effects"
+		},
+		"dateAdded": 1540935816
+	},
+	"item": [
+		{
+			"name": "Derringer",
+			"type": "R",
+			"weapon": true,
+			"weaponCategory": "Firearm",
+			"rarity": "None",
+			"value": 100000,
+			"weight": 2,
+			"dmg1": "{@dice 1d6}",
+			"dmgType": "P",
+			"property": [
+				"AF",
+				"U21CP",
+				"L",
+				"U21MF",
+				"U21RD",
+				"S"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@bold Capacity}: 1 shot",
+						"{@bold Misfire}: 0"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"A small pistol created for surprise attacks at close range, the derringer is an assassin's best friend. Derringers grant their wielder advantage on {@skill Sleight of Hand} checks to draw, and can attack from within 5 feet without disadvantage."
+					]
+				}
+			],
+			"range": "15/60",
+			"source": "u21gs",
+			"firearm": true
+		},
+		{
+			"name": "Musket",
+			"type": "R",
+			"weapon": true,
+			"weaponCategory": "Firearm",
+			"rarity": "None",
+			"value": 25000,
+			"weight": 9,
+			"dmg1": "{@dice 1d12}",
+			"dmgType": "P",
+			"property": [
+				"AF",
+				"U21CP",
+				"U21MF",
+				"U21RD",
+				"2H"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@bold Capacity}: 4 shots",
+						"{@bold Misfire}: 3"
+					]
+				}
+			],
+			"range": "150/600",
+			"source": "u21gs",
+			"firearm": true
+		},
+		{
+			"name": "Pistol",
+			"type": "R",
+			"weapon": true,
+			"weaponCategory": "Firearm",
+			"rarity": "None",
+			"value": 12500,
+			"weight": 4,
+			"dmg1": "{@dice 1d10}",
+			"dmgType": "P",
+			"property": [
+				"AF",
+				"U21CP",
+				"U21MF",
+				"U21RD"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@bold Capacity}: 4 shots",
+						"{@bold Misfire}: 3"
+					]
+				}
+			],
+			"range": "60/240",
+			"source": "u21gs",
+			"firearm": true
+		},
+		{
+			"name": "Sawed-off Scattergun",
+			"type": "R",
+			"weapon": true,
+			"weaponCategory": "Firearm",
+			"rarity": "None",
+			"value": 50000,
+			"weight": 8,
+			"dmg1": "{@dice 1d6}",
+			"dmgType": "P",
+			"property": [
+				"AF",
+				"U21CP",
+				"L",
+				"U21MF",
+				"U21RD",
+				"U21ST"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@bold Capacity}: 2 shots",
+						"{@bold Misfire}: 3"
+					]
+				}
+			],
+			"range": "10/20",
+			"source": "u21gs",
+			"firearm": true
+		},
+		{
+			"name": "Scattergun",
+			"type": "R",
+			"weapon": true,
+			"weaponCategory": "Firearm",
+			"rarity": "None",
+			"value": 25000,
+			"weight": 8,
+			"dmg1": "{@dice 1d8}",
+			"dmgType": "P",
+			"property": [
+				"AF",
+				"U21CP",
+				"U21MF",
+				"U21RD",
+				"U21ST",
+				"2H"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@bold Capacity}: 2 shots",
+						"{@bold Misfire}: 3"
+					]
+				}
+			],
+			"range": "15/30",
+			"source": "u21gs",
+			"firearm": true
+		}
+	],
+	"itemProperty": [
+		{
+			"abbreviation": "U21BR",
+			"source": "u21gs",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Broken",
+					"entries": [
+						"A broken firearm cannot be fired until it is repaired. To repair a broken firearm, you may use an action to attempt a tinker's tools ability check with a DC equal to 10 plus the weapon's base misfire score. On a success, the weapon is no longer considered broken."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "U21CP",
+			"source": "u21gs",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Capacity",
+					"entries": [
+						"A firearm's capacity is the number of shots it can hold at one time. When a firearm has been fired a number of times equal to its capacity, it must be reloaded before firing again."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "U21MF",
+			"source": "u21gs",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Misfire",
+					"entries": [
+						"If your natural roll for a gun attack falls at or below the misfire score of the gun you are using, you suffer a misfire. Your attack misses, any ammo you used in the attack is expended, and your gun becomes broken. You must repair a broken gun before using it."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "U21RD",
+			"source": "u21gs",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Reload",
+					"entries": [
+						"Reloading a gun replaces your next attack you would make with the firearm, refilling the ammunition in the gun up to its capacity. If you prefer, you may instead use an action to reload your firearm."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "U21ST",
+			"source": "u21gs",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Scatter",
+					"entries": [
+						"Firearms with this property shoot pellets in a cone out to their long range increment. All creatures within the cone must make a Dexterity saving throw (DC equal to the 8 + the shooter's Dexterity modifier + the shooter's Proficiency modifier), taking full damage on a failed save, or half damage on a successful one. Creatures outside of the firearm's short range have advantage on this saving throw. If the shooter is not proficient with firearms, all creatures attempt the saving throw roll with advantage."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "U21SL",
+			"source": "u21gs",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Silenced",
+					"entries": [
+						"When fired, a silenced weapon makes no more noise than a bowshot."
+					]
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Acrobatics Harness",
+			"prerequisite": [
+				{
+					"feature": [
+						"Trail of the Desperado"
+					]
+				}
+			],
+			"entries": [
+				"The strains of rolling, ducking, and dodging can take their toll on the body. With this harness, you can perform stunts to dodge out of harm's way with little strain on yourself. While wearing your Acrobatics Harness, you may also add your Proficiency modifier to the damage reduction component of Dodge Roll."
+			],
+			"source": "u21gs",
+			"featureType": "PE"
+		},
+		{
+			"name": "The Rambolier",
+			"prerequisite": [
+				{
+					"feature": [
+						"Trail of the Gunsmith"
+					]
+				}
+			],
+			"entries": [
+				"You never leave home without an ammo stockpile about the size of a munition depot. This high-capacity, smooth leather bandolier carries it all for you. While wearing The Rambolier, you may craft and store up to 2 extra rounds of Specialty Ammo during each long rest, which are added to your current maximum."
+			],
+			"source": "u21gs",
+			"featureType": "PE"
+		},
+		{
+			"name": "Keychain Talisman",
+			"prerequisite": [
+				{
+					"feature": [
+						"Trail of the Marksmage"
+					]
+				}
+			],
+			"entries": [
+				"You have a lucky charm that you hang off of the grip of your gun, which you can infuse with some of your magic. The Talisman has 2 charges. If you use Magic Bullet, you can instead absorb it into the Talisman as 1 charge. You can later expend 1 charge to use Magic Bullet from the Talisman. Using Magic Bullet this way does not cost grit or ammunition, as you have already done so to fill the Talisman."
+			],
+			"source": "u21gs:e",
+			"featureType": "PE"
+		},
+		{
+			"name": "Camouflage Tarp",
+			"prerequisite": [
+				{
+					"feature": [
+						"Trail of the Sniper"
+					]
+				}
+			],
+			"entries": [
+				"Not only do the dirt stains and tears on this tarp help you blend in more with the environment, but they also give it character. Whenever you hit with a firearm attack that has benefitted from Lock On while you are hidden, you remain hidden. Once you use this feature, you can't use it again until you finish a short or long rest."
+			],
+			"source": "u21gs:e",
+			"featureType": "PE"
+		},
+		{
+			"name": "Comfortable Duster",
+			"entries": [
+				"This old, trail-worn duster has been your constant companion. Full of holes, torn in places, and never quite clean, it's like you in more ways than one. While wearing your Comfortable Duster, you never make an ability check or saving throw with disadvantage."
+			],
+			"source": "u21gs",
+			"featureType": "PE"
+		},
+		{
+			"name": "Lucky Hat",
+			"entries": [
+				"This hat has been with you since the beginning, and no matter how many times you lose it, it always seems to find its way back. When you are hit with an attack while wearing your Lucky Hat, you may turn that attack into a miss, even if that attack is a Critical Hit. You may use this feature once between each long rest."
+			],
+			"source": "u21gs",
+			"featureType": "PE"
+		},
+		{
+			"name": "Quality Cigar",
+			"entries": [
+				"No matter where you draw on it, this cigar always gives you a quiet moment to reflect. As an action, you make take a draw on your Quality Cigar to regain 1 Grit point. You may take a draw on the Quality Cigar up to 2 times between each long rest."
+			],
+			"source": "u21gs",
+			"featureType": "PE"
+		},
+		{
+			"name": "Tinker's Goggles",
+			"entries": [
+				"Tinkering has always kept you up at night, and these goggles have been a tinker's best friend. While wearing your Tinker's Goggles, you can see normally in darkness, both magical and nonmagical, up to a distance of 120 feet, and you are immune to the blind condition. In addition, you have advantage on tinker's tools ability checks to repair a broken gun."
+			],
+			"source": "u21gs",
+			"featureType": "PE"
+		}
+	]
+}
